@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Profile Button -->
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Profile"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Take a Ride Button -->
+            <Button
+                android:id="@+id/takeRideButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take a Ride"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Offer a Ride Button -->
+            <Button
+                android:id="@+id/offerRideButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer a Ride"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Manage Requests Button -->
+            <Button
+                android:id="@+id/manageRequestsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Requests"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="20dp"/>
+
+            <!-- My Requests Button -->
+            <Button
+                android:id="@+id/button_my_requests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Requests"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF6347"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

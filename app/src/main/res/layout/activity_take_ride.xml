@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- CardView container for Source and Destination input fields -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Source input field -->
+            <EditText
+                android:id="@+id/sourceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Source"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_bg" />
+
+            <!-- Destination input field -->
+            <EditText
+                android:id="@+id/destinationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Destination"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_bg"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Gender Preference Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender Preference"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:textColor="#FF6347"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/genderPreferenceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+    </RadioGroup>
+
+    <!-- Rider Preference Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider Preference"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:textColor="#FF6347"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/riderPreferenceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/studentRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/staffRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/facultyRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rideRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:paddingTop="16dp"/>
+
+</LinearLayout>

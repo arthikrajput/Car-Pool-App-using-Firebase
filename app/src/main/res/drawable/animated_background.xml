@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Static background -->
+    <item android:drawable="@android:color/white"/>
+
+    <!-- Animated Gradient -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="360"
+            android:duration="15000"
+            android:repeatCount="infinite">
+            <shape
+                android:shape="rectangle">
+                <gradient
+                    android:startColor="#ADD8E6"
+                    android:endColor="#7F7F7F"
+                    android:angle="45"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

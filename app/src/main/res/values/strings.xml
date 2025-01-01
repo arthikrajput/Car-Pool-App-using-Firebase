@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CarPull</string>
+    <string-array name="designation_array">
+        <item>Staff</item>
+        <item>Student</item>
+        <item>Faculty</item>
+    </string-array>
+    <string-array name="rider_preferences">
+        <item>Student</item>
+        <item>Staff</item>
+        <item>Faculty</item>
+    </string-array>
+    <string-array name="gender_preferences">
+        <item>Any</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
